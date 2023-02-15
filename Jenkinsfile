@@ -5,12 +5,14 @@ pipeline {
             steps { 
                 sh "ls"
                 echo 'Hello Jenkins Build stage'
+                sh 'touch mylabdoc.txt'
             } 
         } 
         stage('Test'){ 
             steps { 
                sh "pwd" 
-              echo 'Test stage'
+               echo 'Test stage'
+               sh 'mv mylabdoc.txt mylabdoc2.txt'
             } 
         } 
          stage('Deploy'){ 
