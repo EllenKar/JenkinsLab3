@@ -7,7 +7,7 @@ pipeline {
                 echo 'Hello Jenkins Build stage'
             } 
         } 
-        stage(‘Test’){ 
+        stage('Test'){ 
             steps { 
                sh “pwd” 
               echo 'Test stage'
