@@ -4,19 +4,19 @@ pipeline {
         stage('Build'){ 
             steps { 
                 sh "ls"
-                echo "Hello Jenkins Build stage"
+                echo 'Hello Jenkins Build stage'
             } 
         } 
         stage(‘Test’){ 
             steps { 
                sh “pwd” 
-              echo "Test stage"
+              echo 'Test stage'
             } 
         } 
          stage('Deploy'){ 
             steps { 
                 sh "ls"
-                echo "Deploy Stage"
+                echo 'Deploy Stage'
             } 
          }
     }
