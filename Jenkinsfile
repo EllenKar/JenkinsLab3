@@ -9,7 +9,7 @@ pipeline {
         } 
         stage('Test'){ 
             steps { 
-               sh “pwd” 
+               sh "pwd" 
               echo 'Test stage'
             } 
         } 
