@@ -18,4 +18,6 @@ pipeline {
                 sh "ls"
                 echo "Deploy Stage"
             } 
-        }
+         }
+    }
+}
