@@ -1,6 +1,9 @@
 pipeline { 
     agent any 
     stages { 
+        /*
+     * The below executes the ls command, prints out Hello Jenkins Build stage and executes the creation of mylabdoc.txt
+     */
         stage('Build'){ 
             steps { 
                 sh "ls"
